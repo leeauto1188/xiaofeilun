@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>小飞轮 · A股分析助手</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="logo">🌀 小飞轮</div>
+    <div class="subtitle">A股行情 · 简约对话</div>
+  </header>
+
+  <main class="chat">
+    <div id="messages" class="messages"></div>
+    <div class="composer">
+      <input id="input" type="text" placeholder="例如：今天消费板块表现如何？或：是否买入600519？" />
+      <button id="send">发送</button>
+    </div>
+    <div class="hints">
+      <span class="hint">技能1：输入“行情/板块/新闻”自动聚合主流媒体并总结</span>
+      <span class="hint">技能2：输入“是否买入 + 6位代码”，执行规则判断</span>
+    </div>
+  </main>
+
+  <footer class="app-footer">© 小飞轮</footer>
+  <script src="/app.js"></script>
+</body>
+</html>

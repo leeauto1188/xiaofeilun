@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: xiaofeilun
+    env: node
+    plan: free
+    autoDeploy: true
+    buildCommand: "npm ci --omit=dev"
+    startCommand: "node server.js"
+    healthCheckPath: "/healthz"
+    envVars:
+      - key: DEEPSEEK_API_KEY
+        sync: false
